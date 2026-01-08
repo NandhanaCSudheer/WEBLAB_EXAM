@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color with alert</title>
+</head>
+<body>
+    <h1>Color Changes</h1>
+    <button id="abc" onclick="red()">Click here</button>
+    <script>
+        document.getElementById("abc").addEventListener("click",red);
+        function red(){
+            alert(Math.floor(Math.random()));
+            document.body.style.background="red";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Changes</title>
+     <style>
+        body {
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+   <center><div id="str">
+        <img src="OIP.jpg" id="image"><br>
+        <h1 id="text">Welcome to Web programming</h1>
+    </div>
+     </center> 
+    <script>
+        const str=document.getElementById("str");
+        const image=document.getElementById("image");
+        const text=document.getElementById("text");
+        text.addEventListener("mouseover",function(){
+            image.src="any-questions-or-4c394eca66.jpg";
+            text.textContent="Wonderful!!!Congratulations!!!";
+        })
+         text.addEventListener("mouseout",function(){
+            image.src="OIP.jpg";
+            text.textContent="Welcome to Web programming";
+        })
+    </script>
+</body>
+</html>
