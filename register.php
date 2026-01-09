@@ -25,9 +25,9 @@
     </center>
     <script>
         function func(){
-            let n=document.getElementById("n").value;
-             let r=document.getElementById("r").value;
-              let d=document.getElementById("d").value;
+            let n=document.forms["sform"]["n"].value;
+             let r=document.forms["sform"]["r"].value;
+              let d=document.forms["sform"]["d"].value;
               if(n===""||!isNaN(n)){
                 alert("Name can't be empty and must be a string!!!");
                 return false;
